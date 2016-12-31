@@ -71,7 +71,11 @@ namespace GetThreadReplies
 
         private static void displayMessage(string message, String windowCaption)
         {
-            MessageBox.Show(new Form { TopMost = true }, message, windowCaption);
+            MessageBox.Show(message, windowCaption, 
+                MessageBoxButtons.OK, 
+                MessageBoxIcon.None,
+                MessageBoxDefaultButton.Button1,
+                MessageBoxOptions.DefaultDesktopOnly);
         }
     }
 }
